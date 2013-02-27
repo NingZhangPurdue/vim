@@ -28,6 +28,9 @@ set tags=tags;/
 "pathogen
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
+"supertab
+let g:SuperTabDefaultCompletionType="context"
+
 " Protect large files from sourcing and other overhead.
 " Files become read only
 if !exists("my_auto_commands_loaded")
