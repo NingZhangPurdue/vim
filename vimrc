@@ -18,7 +18,7 @@ set autoindent
 set softtabstop=4
 set expandtab
 set nu
-
+set ruler
 "------------------------------------function/plugin---------------------------------------
 "tagbar
 nmap <F4> : TagbarToggle<CR>
