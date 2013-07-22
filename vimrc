@@ -25,12 +25,24 @@ nmap <F4> : TagbarToggle<CR>
 let g:tagbar_left = 1
 let g:tagbar_width = 30
 set tags=tags;/
-"pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
+
 "supertab
 let g:SuperTabDefaultCompletionType="context"
 
+"vundle
+set nocompatible               " be iMproved
+filetype off                   " required!
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+" let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+"bundles
+Bundle 'Tagbar'
+Bundle 'SuperTab'
+
+filetype plugin indent on     " required!
+
+"------------------------------------adjustment--------------------------------------------
 " Protect large files from sourcing and other overhead.
 " Files become read only
 if !exists("my_auto_commands_loaded")
