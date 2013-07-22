@@ -29,6 +29,10 @@ set tags=tags;/
 "supertab
 let g:SuperTabDefaultCompletionType="context"
 
+"powerline setup
+"set guifont= Menlo
+set laststatus=2
+
 "vundle
 set nocompatible               " be iMproved
 filetype off                   " required!
@@ -39,6 +43,7 @@ Bundle 'gmarik/vundle'
 "bundles
 Bundle 'Tagbar'
 Bundle 'SuperTab'
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 filetype plugin indent on     " required!
 
