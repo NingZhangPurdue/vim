@@ -21,7 +21,7 @@ set nu
 set ruler
 "------------------------------------function/plugin---------------------------------------
 "tagbar
-nmap <F4> : TagbarToggle<CR>
+nmap <F1> : TagbarToggle<CR>
 let g:tagbar_left = 1
 let g:tagbar_width = 30
 set tags=tags;/
@@ -32,6 +32,9 @@ let g:SuperTabDefaultCompletionType="context"
 "powerline setup
 "set guifont= Menlo
 set laststatus=2
+
+"nerdTree
+map <F2> : NERDTreeToggle<CR>
 
 "vundle
 set nocompatible               " be iMproved
@@ -44,6 +47,8 @@ Bundle 'gmarik/vundle'
 Bundle 'Tagbar'
 Bundle 'SuperTab'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Bundle 'scrooloose/nerdtree'
+Bundle 'klen/python-mode'
 
 filetype plugin indent on     " required!
 
